@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="number"],
+input[type="tel"],
+textarea {
+    @apply w-full border my-1 py-2 px-3 rounded-2xl;
+}
+
+textarea {
+    height: 150px;
+}
+
+button {
+    @apply bg-gray-300;
+}
+
+button.primary {
+    @apply bg-primary p-2 w-full text-white rounded-xl;
+}
+
+.paginationBttns {
+    @apply flex justify-evenly lg:w-full h-10 list-none border-t-1
+}
+
+.paginationBttns a {
+    @apply flex px-3 py-1 justify-center cursor-pointer text-gray-400 border-t-1 border-transparent
+}
+
+.paginationBttns a:hover {
+    @apply border-t-1 border-gray-400 text-gray-700
+}
+
+.pageBttns {
+    @apply  mx-1 p-2
+}
+
+.previousBttns {
+    @apply  lg:mr-96 md:mr-56 sm:mr-36
+}
+
+.nextBttns {
+    @apply lg:ml-96 md:ml-56 sm:ml-36 
+}
+
+.break {
+    @apply mt-1 border-none
+}
+
+.activeBttn a{
+    @apply border-t-1 border-primary text-primary
+}
+
+#popup {
+    background-color: rgba(0,0,0,0.4);
+}
