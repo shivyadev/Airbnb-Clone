@@ -3,7 +3,6 @@ import { useEffect, useState } from "react"
 import { Link } from "react-router-dom";
 import PlaceImg from "../components/PlaceImg";
 import ReactPaginate from "react-paginate";
-import { set } from "mongoose";
 import Icons from "../components/Icons";
 
 function RandomisePlace(placesData) {
