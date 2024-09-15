@@ -45,6 +45,10 @@ function getUserDataFromToken(req) {
     })
 }
 
+app.get('/', (req,res) => {
+    res.json('hello');
+})
+
 app.post('/register', async (req,res) => {
     const {name, email, password} = req.body;
 
